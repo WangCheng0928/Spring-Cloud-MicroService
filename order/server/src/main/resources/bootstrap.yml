@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+      #端口改了后,必须把这个注册的拿到这里来,否则会找不到eureka实例

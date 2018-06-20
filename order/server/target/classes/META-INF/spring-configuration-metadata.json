@@ -1,0 +1,22 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.springcloud.order.config.GirlConfig",
+      "name": "girl",
+      "type": "com.springcloud.order.config.GirlConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.springcloud.order.config.GirlConfig",
+      "name": "girl.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.springcloud.order.config.GirlConfig",
+      "name": "girl.name",
+      "type": "java.lang.String"
+    }
+  ]
+}

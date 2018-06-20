@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:WangCheng0928/config-repo.git
+          username: 493475850@qq.com
+          password: wilaopo.1314
+          search-paths: order
+          basedir: F:\Spring Cloud Config
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+    host: 192.168.99.100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  health:
+    rabbit:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
