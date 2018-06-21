@@ -1,12 +1,10 @@
 package com.springcloud.order.service.impl;
 
-import com.springcloud.order.dto.CartDTO;
 import com.springcloud.order.dto.OrderDTO;
 import com.springcloud.order.enums.OrderStatusEnum;
 import com.springcloud.order.enums.PayStatusEnum;
 import com.springcloud.order.pojo.OrderDetail;
 import com.springcloud.order.pojo.OrderMaster;
-import com.springcloud.order.pojo.ProductInfo;
 import com.springcloud.order.repository.OrderDetailRepository;
 import com.springcloud.order.repository.OrderMasterRepository;
 import com.springcloud.order.service.OrderService;
