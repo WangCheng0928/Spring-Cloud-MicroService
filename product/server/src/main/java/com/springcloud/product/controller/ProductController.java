@@ -72,6 +72,11 @@ public class ProductController {
     //获取商品列表(给订单服务用的)
     @PostMapping("/listForOrder")
     public List<ProductInfo> listForOrder(@RequestBody List<String> productIdList){
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         return productService.findList(productIdList);
     }
