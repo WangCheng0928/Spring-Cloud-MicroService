@@ -1,5 +1,6 @@
 package com.springcloud.order.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.springcloud.order.VO.ResultVO;
 import com.springcloud.order.converter.OrderForm2OrderDTOConverter;
 import com.springcloud.order.dto.OrderDTO;

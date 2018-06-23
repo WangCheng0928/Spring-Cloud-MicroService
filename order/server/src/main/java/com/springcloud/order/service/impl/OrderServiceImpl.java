@@ -1,5 +1,6 @@
 package com.springcloud.order.service.impl;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.springcloud.order.dto.OrderDTO;
 import com.springcloud.order.enums.OrderStatusEnum;
 import com.springcloud.order.enums.PayStatusEnum;
@@ -45,6 +46,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     @Transactional
+    @HystrixCommand
     public OrderDTO create(OrderDTO orderDTO) {
 
         String orderId = KeyUtil.getUniqueKey();
